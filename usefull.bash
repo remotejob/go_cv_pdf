@@ -25,6 +25,9 @@ bin/blogfeeder -locale en_US -themes programming -rootdir /home/juno/git/cv/vers
 bin/blogfeeder -locale en_US -themes programming -rootdir /home/juno/git/cv/version_desk_react_00 -topic javascript  -title 'intro'
 
 
+GOBIN=$PWD/bin go install cvpdf/cvpdf.go
+
+
 
 
 
