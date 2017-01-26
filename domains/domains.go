@@ -5,6 +5,10 @@ import (
 	"time"
 )
 
+type CountryType struct {
+	NameStr, CapitalStr, AreaStr, PopStr string
+}
+
 type ServerConfig struct {
 	Main struct {
 		Locale string

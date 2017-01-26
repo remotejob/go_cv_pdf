@@ -32,7 +32,8 @@ func main() {
 
 	pdf.SetHeaderFunc(func() {
 
-		pdf.Image("/home/juno/gowork/src/github.com/remotejob/go_cv_pdf/images/me_alex.jpg", 10, 6, 40, 0, false, "", 0, "")
+		pdf.Image("/home/juno/gowork/src/github.com/remotejob/go_cv_pdf/images/me_alex.jpg", 10, 10, 60, 0, false, "", 0, "")
+		// pdf.ImageOptions("/home/juno/gowork/src/github.com/remotejob/go_cv_pdf/images/me_alex.jpg", 10, 6, 40, 0, false, nil, 0, "")
 		pdf.SetY(5)
 		pdf.SetFont("Arial", "I", 10)
 		pdf.SetX(110)
@@ -45,15 +46,15 @@ func main() {
 		pdf.SetFont("Arial", "", 10)
 		pdf.SetX(95)
 		pdf.CellFormat(20, 6, "Phone:", "LRT", 0, "", false, 0, "")
-		pdf.CellFormat(65, 6, "+358451202801", "LRT", 0, "", false, 0, "")
+		pdf.CellFormat(65, 6, "+358451202801", "LRT", 0, "", false, 0, "tel:+358451202801")
 		pdf.Ln(-1)
 		pdf.SetX(95)
 		pdf.CellFormat(20, 6, "Email:", "LRT", 0, "", false, 0, "")
-		pdf.CellFormat(65, 6, "support@mazurov.eu", "LRT", 0, "", false, 0, "")
+		pdf.CellFormat(65, 6, "support@mazurov.eu", "LRT", 0, "", false, 0, "mail:support@mazurov.eu")
 		pdf.Ln(-1)
 		pdf.SetX(95)
 		pdf.CellFormat(20, 6, "Web:", "LRT", 0, "", false, 0, "")
-		pdf.CellFormat(65, 6, "http://mazurov.eu", "LRT", 0, "", false, 0, "")
+		pdf.CellFormat(65, 6, "http://mazurov.eu", "LRT", 0, "", false, 0, "http://mazurov.eu")
 		pdf.Ln(-1)
 
 		pdf.SetX(95)
@@ -62,12 +63,15 @@ func main() {
 		pdf.Ln(-1)
 		pdf.SetX(95)
 		pdf.CellFormat(20, 6, "Address:", "LRT", 0, "", false, 0, "")
-		pdf.CellFormat(65, 6, "Hogberginkuja 1", "LRT", 0, "", false, 0, "")
+		pdf.CellFormat(65, 6, "Hogberginkuja 1 Lappohja", "LRT", 0, "", false, 0, "")
+		// pdf.Ln(-1)
+		// pdf.SetX(95)
+		// pdf.CellFormat(20, 6, "", "LR", 0, "", false, 0, "")
+		// pdf.CellFormat(65, 6, "Lappohja", "LR", 0, "", false, 0, "")
 		pdf.Ln(-1)
 		pdf.SetX(95)
 		pdf.CellFormat(20, 6, "", "LRB", 0, "", false, 0, "")
-		pdf.CellFormat(65, 6, "10820 Lappohja Finland", "LRB", 0, "", false, 0, "")
-
+		pdf.CellFormat(65, 6, "10820 Finland", "LRB", 0, "", false, 0, "")
 		pdf.Ln(20)
 	})
 	pdf.SetFooterFunc(func() {
@@ -82,7 +86,7 @@ func main() {
 
 	for _, cv := range bconfig.Cv {
 
-		if cv.Name == "WebApplication Development" {
+		if cv.Name == "Telecommunication Application" {
 
 			pdf.AddPage()
 		}
@@ -90,7 +94,7 @@ func main() {
 		pdf.SetFont("Arial", "B", 15)
 		pdf.CellFormat(0, 10, cv.Name, "", 1, "", false, 0, "")
 
-		pdf.SetFillColor(255, 0, 0)
+		pdf.SetFillColor(100, 149, 237)
 		pdf.SetTextColor(255, 255, 255)
 		pdf.SetDrawColor(128, 0, 0)
 		pdf.SetLineWidth(.3)
@@ -133,7 +137,7 @@ func main() {
 
 	pdf.SetHeaderFunc(func() {
 
-		pdf.Image("/home/juno/gowork/src/github.com/remotejob/go_cv_pdf/images/me_alex.jpg", 10, 6, 40, 0, false, "", 0, "")
+		pdf.Image("/home/juno/gowork/src/github.com/remotejob/go_cv_pdf/images/me_alex.jpg", 10, 10, 60, 0, false, "", 0, "")
 		pdf.SetY(5)
 		pdf.SetFont("Arial", "I", 10)
 		pdf.SetX(110)
@@ -145,7 +149,7 @@ func main() {
 		pdf.Ln(-1)
 		pdf.SetFont("Arial", "", 10)
 		pdf.SetX(95)
-		pdf.CellFormat(20, 6, "Phonelss:", "LRT", 0, "", false, 0, "")
+		pdf.CellFormat(20, 6, "Phone:", "LRT", 0, "", false, 0, "")
 		pdf.CellFormat(65, 6, "+358451202801", "LRT", 0, "", false, 0, "")
 		pdf.Ln(-1)
 		pdf.SetX(95)
@@ -163,11 +167,11 @@ func main() {
 		pdf.Ln(-1)
 		pdf.SetX(95)
 		pdf.CellFormat(20, 6, "Address:", "LRT", 0, "", false, 0, "")
-		pdf.CellFormat(65, 6, "Hogberginkuja 1", "LRT", 0, "", false, 0, "")
+		pdf.CellFormat(65, 6, "Hogberginkuja 1 Lappohja", "LRT", 0, "", false, 0, "")
 		pdf.Ln(-1)
 		pdf.SetX(95)
 		pdf.CellFormat(20, 6, "", "LRB", 0, "", false, 0, "")
-		pdf.CellFormat(65, 6, "10820 Lappohja Finland", "LRB", 0, "", false, 0, "")
+		pdf.CellFormat(65, 6, "10820 Finland", "LRB", 0, "", false, 0, "")
 
 		pdf.Ln(20)
 	})
@@ -181,7 +185,7 @@ func main() {
 		pdf.SetFont("Arial", "B", 15)
 		pdf.CellFormat(0, 10, job.Name, "", 1, "", false, 0, "")
 
-		pdf.SetFillColor(255, 0, 0)
+		pdf.SetFillColor(100, 149, 237)
 		pdf.SetTextColor(255, 255, 255)
 		pdf.SetDrawColor(128, 0, 0)
 		pdf.SetLineWidth(.3)

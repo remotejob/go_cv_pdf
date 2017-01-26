@@ -26,7 +26,7 @@ img="assets/images/"
   [[cv.item]]
   	title="GoLang"
 	rank=5
-  	duration = 2
+  	duration = 3
   	link =""		
   	extra="actually used now in production as substitute for JAVA" 
   	img="assets/images/golang.png" 
@@ -46,7 +46,7 @@ img="assets/images/"
 	rank= 3
   	duration = 1
   	link =""
-  	extra="abandoned now in favor of Angularjs" 
+  	extra="used before JavaScript" 
   	img="assets/images/dart.png" 
   	
   		
@@ -55,7 +55,7 @@ img="assets/images/"
 	rank=3
   	duration = 1
   	link =""	
-  	extra="abandoned now in favor of Golang" 
+  	extra="was used before Golang" 
   	img="assets/images/ruby.jpg" 
   	
 	       
@@ -64,7 +64,7 @@ img="assets/images/"
 	rank=2
   	duration = 1
   	link =""	
-  	extra="in some cases used in production but not widely" 
+  	extra="in some cases was used in production" 
   	img="assets/images/python.png" 
   	
   		 
@@ -73,7 +73,7 @@ img="assets/images/"
 	rank= 1
   	duration = 1
   	link =""					 
-  	extra="practically not used any more abandoned now in favor of JavaScript" 
+  	extra="was used for web application before Java" 
   	img="assets/images/php.png" 
   	
 	   
@@ -122,6 +122,22 @@ img="assets/images/"
 name = "Data Bases"
 path = "Data-bases.html"
 img="assets/images/"
+
+  [[cv.item]]
+  	title="ElasticSearch"
+  	rank = 5	
+  	duration = 1
+  	link =""	
+  	extra="used in some cases" 
+  	img="assets/images/mysql.png" 
+
+  [[cv.item]]
+  	title="MongoDB"
+  	rank = 5	
+  	duration = 2
+  	link =""	
+  	extra="mostly used in production" 
+  	img="assets/images/mysql.png" 
   
   [[cv.item]]
   	title="Mysql"
@@ -212,15 +228,30 @@ img="assets/images/"
 name = "WebApplication Development"
 path = "WebApplication-development.html"
 img="assets/images/"
-  	
+
    [[cv.item]]
-  	title="Angularjs"
+  	title="ReactJS"
   	rank = 5
   	duration = 1
   	link =""	
    	extra="actually used in production" 
    	img="assets/images/angularjs.png"
-   	  	   	  	
+  	
+   [[cv.item]]
+  	title="Angularjs"
+  	rank = 5
+  	duration = 2
+  	link =""	
+   	extra="actually used in production" 
+   	img="assets/images/angularjs.png"
+
+   [[cv.item]]
+  	title="GoLang templates"
+  	rank = 5
+  	duration = 2
+  	link =""	
+   	extra="used in production for SEO sites improvement" 
+   	img="assets/images/angularjs.png"   	  	   	  	
   	
    [[cv.item]]
   	title="Google Web Toolkit"
@@ -236,7 +267,7 @@ img="assets/images/"
   	rank = 3
   	duration = 1
   	link =""	
-   	extra="still in use but mostly abandoned in favor of Angularjs" 
+   	extra="used before Angularjs/ReactJS frameworks" 
    	img="assets/images/rubyonrails.png"
    	
    [[cv.item]]
@@ -244,7 +275,7 @@ img="assets/images/"
   	rank = 2
   	duration = 1
   	link ="https://www.djangoproject.com"	
-   	extra="still in use but mostly abandoned in favor of GoLang" 
+   	extra="was used in come cases JavaSript frameworks" 
    	img="assets/images/django.png"   	
    	  	
    	  	  	
@@ -256,7 +287,7 @@ img="assets/images/"
    [[cv.item]]
   	title="Digital Ocean"
   	rank = 5
-  	duration = 1
+  	duration = 2
   	link =""	
    	extra="actually used in production as main platform" 
    	img="assets/images/digitalocean.png"
@@ -277,8 +308,7 @@ img="assets/images/"
   	link ="https://cloud.google.com/appengine/docs/whatisgoogleappengine"	
    	extra="still in use but abandoned in favor of Digital Ocean" 
    	img="assets/images/googleappengine.jpg"   	
-   	  	
-  	
+   	  	  	
    [[cv.item]]
   	title="Rackspace"
   	rank = 4 	  	  	
@@ -297,10 +327,10 @@ img="assets/images/"
 
    [[cv.item]]
   	title="Docker"
-  	rank = 1 	  	  	
-   	duration = 1
+  	rank = 5 	  	  	
+   	duration = 2
   	link ="https://www.docker.com/"	
-   	extra="basic knowledge" 
+   	extra="actually used in combination Docker/Kubernates" 
    	img="assets/images/docker.png"   	
    	   	 	 	   	  	 	 	  	
 [[cv]]
