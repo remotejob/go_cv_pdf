@@ -178,7 +178,7 @@ func main() {
 
 	pdf.AddPage()
 
-	wjobplace := []float64{30, 15, 20, 60, 35, 15}
+	wjobplace := []float64{35, 15, 20, 55, 35, 15}
 
 	for _, job := range bjob.Jobs {
 
@@ -233,7 +233,7 @@ func main() {
 
 	err = pdf.OutputFileAndClose("/home/juno/gowork/src/github.com/remotejob/go_cv_pdf/pdf_result/my_cv.pdf")
 	if err == nil {
-		fmt.Println("Successfully generated my_cv.pdf")
+		fmt.Println("Successfully generated pdf_result/my_cv.pdf")
 	} else {
 		fmt.Println(err)
 	}

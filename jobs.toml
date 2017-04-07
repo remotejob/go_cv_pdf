@@ -6,10 +6,19 @@ path = "Programming-languages.html"
 img="assets/images/"
 
 [[jobs.item]]
+  title="MIDDLESEX UNIVERSITY"
+  rank = 9
+  duration = "2017-......"
+  position = "Programmer"
+  details = "Big Data Elaboration EU project"
+  location = "London"
+  country = "ENGLAND"
+
+[[jobs.item]]
   title="FREELANCER"
   rank = 8
-  duration = "2015-2016"
-  position = "Frelancer"
+  duration = "2015-2017"
+  position = "Freelancer"
   details = "Programming"
   location = "Hanko (Uusimaa)"
   country = "FINLAND"
