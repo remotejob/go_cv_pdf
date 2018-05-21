@@ -6,9 +6,9 @@ path = "Programming-languages.html"
 img="assets/images/"
 
 [[jobs.item]]
-  title="MIDDLESEX UNIVERSITY"
+  title="MIDDLESEX UNI"
   rank = 9
-  duration = "2017-......"
+  duration = "2017-2018"
   position = "Programmer"
   details = "Big Data Elaboration EU project"
   location = "London"
